@@ -1,0 +1,14 @@
+C:\Users\EysanGuc\source\repos\XamarinCalculator\XamarinCalculator\XamarinCalculator\bin\Debug\netstandard2.0\XamarinCalculator.deps.json
+C:\Users\EysanGuc\source\repos\XamarinCalculator\XamarinCalculator\XamarinCalculator\bin\Debug\netstandard2.0\XamarinCalculator.dll
+C:\Users\EysanGuc\source\repos\XamarinCalculator\XamarinCalculator\XamarinCalculator\bin\Debug\netstandard2.0\ref\XamarinCalculator.dll
+C:\Users\EysanGuc\source\repos\XamarinCalculator\XamarinCalculator\XamarinCalculator\bin\Debug\netstandard2.0\XamarinCalculator.pdb
+C:\Users\EysanGuc\source\repos\XamarinCalculator\XamarinCalculator\XamarinCalculator\obj\Debug\netstandard2.0\XamarinCalculator.csprojAssemblyReference.cache
+C:\Users\EysanGuc\source\repos\XamarinCalculator\XamarinCalculator\XamarinCalculator\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\EysanGuc\source\repos\XamarinCalculator\XamarinCalculator\XamarinCalculator\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\EysanGuc\source\repos\XamarinCalculator\XamarinCalculator\XamarinCalculator\obj\Debug\netstandard2.0\View\CalculatorView.xaml.g.cs
+C:\Users\EysanGuc\source\repos\XamarinCalculator\XamarinCalculator\XamarinCalculator\obj\Debug\netstandard2.0\XamarinCalculator.AssemblyInfoInputs.cache
+C:\Users\EysanGuc\source\repos\XamarinCalculator\XamarinCalculator\XamarinCalculator\obj\Debug\netstandard2.0\XamarinCalculator.AssemblyInfo.cs
+C:\Users\EysanGuc\source\repos\XamarinCalculator\XamarinCalculator\XamarinCalculator\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\EysanGuc\source\repos\XamarinCalculator\XamarinCalculator\XamarinCalculator\obj\Debug\netstandard2.0\XamarinCalculator.dll
+C:\Users\EysanGuc\source\repos\XamarinCalculator\XamarinCalculator\XamarinCalculator\obj\Debug\netstandard2.0\ref\XamarinCalculator.dll
+C:\Users\EysanGuc\source\repos\XamarinCalculator\XamarinCalculator\XamarinCalculator\obj\Debug\netstandard2.0\XamarinCalculator.pdb

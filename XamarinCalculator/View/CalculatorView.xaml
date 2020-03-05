@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinCalculator.View.CalculatorView">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Button">
+                <Setter Property="BorderWidth" Value="0,0,0,1"></Setter>
+                <Setter Property="BorderColor" Value="White"></Setter>
+                <Setter Property="FontSize" Value="40"></Setter>
+                <Setter Property="BackgroundColor" Value="Accent"></Setter>
+                <Setter Property="Opacity" Value="0.8"></Setter>
+                <Setter Property="TextColor" Value="White"></Setter>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <Grid Margin="0,10,0,0" RowSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="250"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackLayout Grid.Row="0" Grid.Column="0">
+            <Grid RowSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="125"></RowDefinition>
+                    <RowDefinition Height="125"></RowDefinition>
+                </Grid.RowDefinitions>
+                <BoxView BackgroundColor="White" Grid.Column="0" Grid.Row="0"></BoxView>
+                <Entry Grid.Row="1" Grid.Column="0" Text="{Binding Result}" HorizontalTextAlignment="End" VerticalTextAlignment="End" 
+                       Placeholder="0" FontSize="45" BackgroundColor="White" IsEnabled="False" ></Entry>
+            </Grid>
+        </StackLayout>
+        <Grid Grid.Row="1" RowSpacing="0" Grid.Column="0">
+            <Grid.RowDefinitions >
+                <RowDefinition Height="80"></RowDefinition>
+                <RowDefinition Height="80"></RowDefinition>
+                <RowDefinition Height="80"></RowDefinition>
+                <RowDefinition Height="80"></RowDefinition>
+                <RowDefinition Height="80"></RowDefinition>
+            </Grid.RowDefinitions>
+            <StackLayout Grid.Column="0" Grid.Row="0">
+                <Grid RowSpacing="0" ColumnSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="80"></RowDefinition>
+                        <RowDefinition Height="80"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <!--Biraz daha düzenli yapmaya garet göster.-->
+                    <Button Grid.Column="0" Command="{Binding }" Text="C" FontAttributes="Bold"></Button>
+                    <Button Grid.Column="1"  Grid.Row="0" Text="%"></Button>
+                    <Button Grid.Column="2"  Grid.Row="0" Text="÷"></Button>
+                    <Button Grid.Column="3"  Grid.Row="0" BackgroundColor="Accent" Opacity="0.8" ImageSource="backspace2.png" 
+                            FlowDirection="MatchParent" Padding="10,0,0,0"></Button>
+                </Grid>
+            </StackLayout>
+            <StackLayout Grid.Column="0" Grid.Row="1">
+                <Grid RowSpacing="0" ColumnSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="80"></RowDefinition>
+                        <RowDefinition Height="80"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <!--Biraz daha düzenli yapmaya garet göster.-->
+                    <Button Grid.Column="0" Grid.Row="0" Text="7"></Button>
+                    <Button Grid.Column="1"  Grid.Row="0" Text="8"></Button>
+                    <Button Grid.Column="2"  Grid.Row="0" Text="9"></Button>
+                    <Button Grid.Column="3"  Grid.Row="0" Text="x"></Button>
+                </Grid>
+            </StackLayout>
+            <StackLayout Grid.Column="0" Grid.Row="2">
+                <Grid RowSpacing="0" ColumnSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="80"></RowDefinition>
+                        <RowDefinition Height="80"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <!--Biraz daha düzenli yapmaya garet göster.-->
+                    <Button Grid.Column="0"  Grid.Row="0" Text="4"></Button>
+                    <Button Grid.Column="1"  Grid.Row="0" Text="5"></Button>
+                    <Button Grid.Column="2"  Grid.Row="0" Text="6"></Button>
+                    <Button Grid.Column="3"  Grid.Row="0" Text="-" ></Button>
+                </Grid>
+            </StackLayout>
+            <StackLayout Grid.Column="0" Grid.Row="3">
+                <Grid RowSpacing="0" ColumnSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="80"></RowDefinition>
+                        <RowDefinition Height="80"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <!--Biraz daha düzenli yapmaya garet göster.-->
+                    <Button Grid.Column="0"  Grid.Row="0" Text="1"></Button>
+                    <Button Grid.Column="1"  Grid.Row="0" Text="2"></Button>
+                    <Button Grid.Column="2"  Grid.Row="0" Text="3"></Button>
+                    <Button Grid.Column="3"  Grid.Row="0" Text="+"></Button>
+                </Grid>
+            </StackLayout>
+            <StackLayout Grid.Column="0" Grid.Row="4">
+                <Grid RowSpacing="0" ColumnSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="80"></RowDefinition>
+                        <RowDefinition Height="80"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <!--Biraz daha düzenli yapmaya garet göster.-->
+                    <Button Grid.Column="0"  Grid.Row="0" Text="+/-"></Button>
+                    <Button Grid.Column="1"  Grid.Row="0" Text="0"></Button>
+                    <Button Grid.Column="2"  Grid.Row="0" Text="."></Button>
+                    <Button Grid.Column="3"  Grid.Row="0" Text="="></Button>
+                </Grid>
+            </StackLayout>
+        </Grid>
+    </Grid>
+</ContentPage>
