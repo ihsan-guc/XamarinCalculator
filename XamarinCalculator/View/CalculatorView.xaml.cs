@@ -1,6 +1,7 @@
 ﻿
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XamarinCalculator.ViewModel;
 
 namespace XamarinCalculator.View
 {
@@ -10,6 +11,7 @@ namespace XamarinCalculator.View
         public CalculatorView()
         {
             InitializeComponent();
+            BindingContext = new CalculatorViewModel();
         }
     }
 }
