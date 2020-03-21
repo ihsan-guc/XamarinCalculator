@@ -37,6 +37,27 @@ namespace XamarinCalculator.ViewModel
 			get { return binaryOperation; }
 			set { binaryOperation = value; OnPropertyChanged(); }
 		}
+		private ICommand enterCommand;
+
+		public ICommand EnterCommand
+		{
+			get { return enterCommand; }
+			set { enterCommand = value; OnPropertyChanged(); }
+		}
+		private ICommand backspaceCommand;
+
+		public ICommand BackspaceCommand
+		{
+			get { return backspaceCommand; }
+			set { backspaceCommand = value; OnPropertyChanged(); }
+		}
+		private ICommand unaryOperation;
+
+		public ICommand UnaryOperation
+		{
+			get { return unaryOperation; }
+			set { unaryOperation = value;OnPropertyChanged(); }
+		}
 
 	}
 }

@@ -45,10 +45,9 @@
                         <RowDefinition Height="80"></RowDefinition>
                     </Grid.RowDefinitions>
                     <Button Grid.Column="0" Text="C" Command="{Binding ClearEntryCommand}" FontAttributes="Bold"></Button>
-                    <Button Grid.Column="1" Grid.Row="0" Text="%"></Button>
-                    <Button Grid.Column="2" Grid.Row="0" Text="÷"></Button>
-                    <Button Grid.Column="3" Grid.Row="0" BackgroundColor="Accent" Opacity="0.8" ImageSource="backspace2.png" 
-                            FlowDirection="MatchParent" Padding="10,0,0,0"></Button>
+                    <Button Grid.Column="1" Command="{Binding UnaryOperation}" CommandParameter="sqrt" Grid.Row="0" Text="&#x221A;"></Button>
+                    <Button Grid.Column="2" Command="{Binding BinaryOperation}" CommandParameter="divide" Grid.Row="0" Text="÷"></Button>
+                    <Button Grid.Column="3" Command="{Binding BackspaceCommand}" Grid.Row="0" Text="&#x21E6;"></Button>
                 </Grid>
             </StackLayout>
             <StackLayout Grid.Column="0" Grid.Row="1">
@@ -60,7 +59,7 @@
                     <Button Grid.Column="0" Command="{Binding DigitCommand}" CommandParameter="7" Grid.Row="0" Text="7"></Button>
                     <Button Grid.Column="1" Command="{Binding DigitCommand}" CommandParameter="8" Grid.Row="0" Text="8"></Button>
                     <Button Grid.Column="2" Command="{Binding DigitCommand}" CommandParameter="9" Grid.Row="0" Text="9"></Button>
-                    <Button Grid.Column="3"  Grid.Row="0" Text="x"></Button>
+                    <Button Grid.Column="3" Command="{Binding BinaryOperation}" CommandParameter="multiply" Grid.Row="0" Text="&#x00D7;"></Button>
                 </Grid>
             </StackLayout>
             <StackLayout Grid.Column="0" Grid.Row="2">
@@ -72,7 +71,7 @@
                     <Button Grid.Column="0" Command="{Binding DigitCommand}" CommandParameter="4" Grid.Row="0" Text="4"></Button>
                     <Button Grid.Column="1" Command="{Binding DigitCommand}" CommandParameter="5" Grid.Row="0" Text="5"></Button>
                     <Button Grid.Column="2" Command="{Binding DigitCommand}" CommandParameter="6" Grid.Row="0" Text="6"></Button>
-                    <Button Grid.Column="3"  Grid.Row="0" Text="-" ></Button>
+                    <Button Grid.Column="3" Command="{Binding BinaryOperation}" CommandParameter="subtract" Grid.Row="0" Text="&#x2013;"></Button>
                 </Grid>
             </StackLayout>
             <StackLayout Grid.Column="0" Grid.Row="3">
@@ -93,10 +92,10 @@
                         <RowDefinition Height="80"></RowDefinition>
                         <RowDefinition Height="80"></RowDefinition>
                     </Grid.RowDefinitions>
-                    <Button Grid.Column="0"  Grid.Row="0" Text="+/-"></Button>
+                    <Button Grid.Column="0" Command="{Binding UnaryOperation}" CommandParameter="negate" Grid.Row="0" Text="+/&#x2013;"></Button>
                     <Button Grid.Column="1" Command="{Binding DigitCommand}" CommandParameter="0" Grid.Row="0" Text="0"></Button>
                     <Button Grid.Column="2" Command="{Binding DigitCommand}" CommandParameter="." Grid.Row="0" Text="."></Button>
-                    <Button Grid.Column="3"  Grid.Row="0" Text="="></Button>
+                    <Button Grid.Column="3" Command="{Binding EnterCommand}" Grid.Row="0" Text="="></Button>
                 </Grid>
             </StackLayout>
         </Grid>

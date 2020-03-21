@@ -470,3 +470,4 @@ C:\Users\EysanGuc\source\repos\XamarinCalculator\XamarinCalculator\XamarinCalcul
 C:\Users\EysanGuc\source\repos\XamarinCalculator\XamarinCalculator\XamarinCalculator.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\EysanGuc\source\repos\XamarinCalculator\XamarinCalculator\XamarinCalculator.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\EysanGuc\source\repos\XamarinCalculator\XamarinCalculator\XamarinCalculator.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\EysanGuc\source\repos\XamarinCalculator\XamarinCalculator\XamarinCalculator.Android\obj\Debug\90\res\drawable\github.png
