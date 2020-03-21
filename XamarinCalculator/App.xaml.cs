@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XamarinCalculator.View;
 
 namespace XamarinCalculator
 {
@@ -10,7 +11,7 @@ namespace XamarinCalculator
         {
             InitializeComponent();
 
-            MainPage = new XamarinCalculator.View.CalculatorView();
+            MainPage = new CalculatorView();
         }
 
         protected override void OnStart()

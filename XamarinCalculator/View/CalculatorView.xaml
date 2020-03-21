@@ -44,11 +44,10 @@
                         <RowDefinition Height="80"></RowDefinition>
                         <RowDefinition Height="80"></RowDefinition>
                     </Grid.RowDefinitions>
-                    <!--Biraz daha düzenli yapmaya garet göster.-->
-                    <Button Grid.Column="0" Command="{Binding }" Text="C" FontAttributes="Bold"></Button>
-                    <Button Grid.Column="1"  Grid.Row="0" Text="%"></Button>
-                    <Button Grid.Column="2"  Grid.Row="0" Text="÷"></Button>
-                    <Button Grid.Column="3"  Grid.Row="0" BackgroundColor="Accent" Opacity="0.8" ImageSource="backspace2.png" 
+                    <Button Grid.Column="0" Text="C" Command="{Binding ClearEntryCommand}" FontAttributes="Bold"></Button>
+                    <Button Grid.Column="1" Grid.Row="0" Text="%"></Button>
+                    <Button Grid.Column="2" Grid.Row="0" Text="÷"></Button>
+                    <Button Grid.Column="3" Grid.Row="0" BackgroundColor="Accent" Opacity="0.8" ImageSource="backspace2.png" 
                             FlowDirection="MatchParent" Padding="10,0,0,0"></Button>
                 </Grid>
             </StackLayout>
@@ -58,10 +57,9 @@
                         <RowDefinition Height="80"></RowDefinition>
                         <RowDefinition Height="80"></RowDefinition>
                     </Grid.RowDefinitions>
-                    <!--Biraz daha düzenli yapmaya garet göster.-->
-                    <Button Grid.Column="0" Grid.Row="0" Text="7"></Button>
-                    <Button Grid.Column="1"  Grid.Row="0" Text="8"></Button>
-                    <Button Grid.Column="2"  Grid.Row="0" Text="9"></Button>
+                    <Button Grid.Column="0" Command="{Binding DigitCommand}" CommandParameter="7" Grid.Row="0" Text="7"></Button>
+                    <Button Grid.Column="1" Command="{Binding DigitCommand}" CommandParameter="8" Grid.Row="0" Text="8"></Button>
+                    <Button Grid.Column="2" Command="{Binding DigitCommand}" CommandParameter="9" Grid.Row="0" Text="9"></Button>
                     <Button Grid.Column="3"  Grid.Row="0" Text="x"></Button>
                 </Grid>
             </StackLayout>
@@ -71,10 +69,9 @@
                         <RowDefinition Height="80"></RowDefinition>
                         <RowDefinition Height="80"></RowDefinition>
                     </Grid.RowDefinitions>
-                    <!--Biraz daha düzenli yapmaya garet göster.-->
-                    <Button Grid.Column="0"  Grid.Row="0" Text="4"></Button>
-                    <Button Grid.Column="1"  Grid.Row="0" Text="5"></Button>
-                    <Button Grid.Column="2"  Grid.Row="0" Text="6"></Button>
+                    <Button Grid.Column="0" Command="{Binding DigitCommand}" CommandParameter="4" Grid.Row="0" Text="4"></Button>
+                    <Button Grid.Column="1" Command="{Binding DigitCommand}" CommandParameter="5" Grid.Row="0" Text="5"></Button>
+                    <Button Grid.Column="2" Command="{Binding DigitCommand}" CommandParameter="6" Grid.Row="0" Text="6"></Button>
                     <Button Grid.Column="3"  Grid.Row="0" Text="-" ></Button>
                 </Grid>
             </StackLayout>
@@ -84,11 +81,10 @@
                         <RowDefinition Height="80"></RowDefinition>
                         <RowDefinition Height="80"></RowDefinition>
                     </Grid.RowDefinitions>
-                    <!--Biraz daha düzenli yapmaya garet göster.-->
-                    <Button Grid.Column="0"  Grid.Row="0" Text="1"></Button>
-                    <Button Grid.Column="1"  Grid.Row="0" Text="2"></Button>
-                    <Button Grid.Column="2"  Grid.Row="0" Text="3"></Button>
-                    <Button Grid.Column="3"  Grid.Row="0" Text="+"></Button>
+                    <Button Grid.Column="0" Command="{Binding DigitCommand}" CommandParameter="0" Grid.Row="0" Text="1"></Button>
+                    <Button Grid.Column="1" Command="{Binding DigitCommand}" CommandParameter="1" Grid.Row="0" Text="2"></Button>
+                    <Button Grid.Column="2" Command="{Binding DigitCommand}" CommandParameter="2" Grid.Row="0" Text="3"></Button>
+                    <Button Grid.Column="3" Command="{Binding BinaryOperation}" CommandParameter="add" Grid.Row="0" Text="+"></Button>
                 </Grid>
             </StackLayout>
             <StackLayout Grid.Column="0" Grid.Row="4">
@@ -97,10 +93,9 @@
                         <RowDefinition Height="80"></RowDefinition>
                         <RowDefinition Height="80"></RowDefinition>
                     </Grid.RowDefinitions>
-                    <!--Biraz daha düzenli yapmaya garet göster.-->
                     <Button Grid.Column="0"  Grid.Row="0" Text="+/-"></Button>
-                    <Button Grid.Column="1"  Grid.Row="0" Text="0"></Button>
-                    <Button Grid.Column="2"  Grid.Row="0" Text="."></Button>
+                    <Button Grid.Column="1" Command="{Binding DigitCommand}" CommandParameter="0" Grid.Row="0" Text="0"></Button>
+                    <Button Grid.Column="2" Command="{Binding DigitCommand}" CommandParameter="." Grid.Row="0" Text="."></Button>
                     <Button Grid.Column="3"  Grid.Row="0" Text="="></Button>
                 </Grid>
             </StackLayout>
